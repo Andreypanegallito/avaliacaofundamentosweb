@@ -1,0 +1,217 @@
+#menu_1 {
+   height: 100px;
+   padding: 10px 0;
+   /* border-bottom: 1px #ee534f solid; */
+   font-family: "Raleway Semibold";
+   width: 100%;
+   position: sticky;
+   top: 0;
+   background-color: #e7dbdb;
+   display: block;
+   z-index: 10;
+   -webkit-box-shadow: 0px 0px 10px rgb(50 50 50 / 40%);
+}
+
+#menu_1 .conteudo-menu {
+   padding: 0 15px;
+   max-width: 100%;
+   margin: 0;
+   display: flex;
+   height: 100%;
+}
+
+#menu_1 .conteudo-menu .logomarca {
+   float: left;
+   height: 100%;
+   width: 25%;
+}
+
+#menu_1 .conteudo-menu .logomarca a {
+   height: 100%;
+   width: 100%;
+   display: flex;
+}
+
+#menu_1 .conteudo-menu .logomarca img {
+   display: block;
+   max-height: 100%;
+   margin: auto;
+}
+
+#menu_1 .conteudo-menu .menu {
+   float: right;
+   margin: auto 100px auto auto;
+}
+
+#menu_1 .conteudo-menu .menu #submenu-dropdown {
+   display: none;
+   position: absolute;
+   margin: 0;
+   box-shadow: 0px 0px 5px 1px #00000061;
+   border-radius: 5px;
+   background-color: #fff;
+   padding: 2px;
+   animation: FadeInMenu 0.2s;
+   -webkit-animation: FadeInMenu 0.2s;
+}
+
+#menu_1 .conteudo-menu .menu .menu-dropdown i {
+   display: none;
+   float: right;
+   font-size: 20px;
+}
+
+#menu_1 .conteudo-menu .menu #submenu-dropdown li {
+   float: none;
+   font-size: 14px;
+   width: 150px;
+   border-bottom: 1px solid #ee534f;
+   padding: 10px !important;
+}
+
+#menu_1 .conteudo-menu .menu #submenu-dropdown li a {
+   text-align: center;
+}
+
+#menu_1 .conteudo-menu .menu .menu-dropdown:hover #submenu-dropdown {
+   display: block;
+}
+
+#menu_1 .conteudo-menu .menu ul li {
+   padding: 15px;
+   list-style: none;
+   float: left;
+   background: #e7dbdb;
+}
+
+#menu_1 .conteudo-menu .menu ul li a {
+   text-transform: capitalize;
+   text-decoration: none;
+   color: #000;
+   cursor: pointer;
+}
+
+#menu_1 .conteudo-menu .menu ul li a:hover {
+   color: #ee534fd9;
+}
+
+/*MENU MOBILE*/
+/*estilização btn mobile menu*/
+.btn-mobile {
+   display: none;
+   position: relative;
+   margin: auto 30px auto auto;
+}
+
+.btn-mobile label {
+   font-size: 30px;
+   cursor: pointer;
+   padding: 0;
+   margin: 0;
+}
+
+/*ANIMACOES*/
+
+@keyframes FadeInMenu {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@-webkit-keyframes FadeInMenu {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@media (max-width: 1275px) {
+   #menu_1 {
+      padding: 0;
+   }
+
+   #menu_1 .conteudo-menu {
+      padding: 0;
+      flex-wrap: wrap;
+   }
+
+   #menu_1 .conteudo-menu #nav-menu {
+      display: none;
+   }
+
+   #menu_1 .conteudo-menu .btn-mobile {
+      display: block;
+   }
+
+   #menu_1 .conteudo-menu .menu .menu-dropdown i {
+      display: block;
+      transform: translateX(-15px);
+   }
+
+   #menu_1 .conteudo-menu .menu #submenu-dropdown li {
+      width: 100%;
+   }
+
+   /*MENU MOBILE*/
+   #menu_1 .conteudo-menu .menu {
+      float: none;
+      width: 100%;
+      position: relative;
+      top: 0;
+      margin: auto;
+   }
+
+   #menu_1 .conteudo-menu .menu ul {
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 1px 0;
+      background-color: #fff;
+      animation: BlockIn 0.4s;
+   }
+
+   #menu_1 .conteudo-menu .menu ul li {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px #ee534f solid;
+   }
+
+   #menu_1 .conteudo-menu .logomarca {
+      width: 50%;
+      float: left;
+   }
+}
+
+@media (max-width: 400px) and (max-height: 900px) {
+   #menu_1 {
+      height: 75px;
+   }
+}
+
+@keyframes BlockIn {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes BlockOut {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
+}
