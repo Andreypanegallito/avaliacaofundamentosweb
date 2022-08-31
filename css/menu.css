@@ -175,6 +175,8 @@
       margin: 1px 0;
       background-color: #fff;
       animation: BlockIn 0.4s;
+      display: flex;
+      flex-direction: column;
    }
 
    #menu_1 .conteudo-menu .menu ul li {
