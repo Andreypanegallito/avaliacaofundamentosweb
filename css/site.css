@@ -108,8 +108,14 @@ section h1 {
 
 .loc-contato {
    display: flex;
+   flex-wrap: wrap;
    width: 100%;
 }
+
+.loc-contato h1 {
+   width: 100%;
+}
+
 .loc-contato .mapa,
 .loc-contato .inf-contato {
    width: 50%;
@@ -122,7 +128,7 @@ section h1 {
 }
 
 .loc-contato .inf-contato {
-   margin: 0 0 0 40px;
+   padding: 0 0 0 40px;
    display: flex;
    flex-direction: column;
    line-height: 25px;
